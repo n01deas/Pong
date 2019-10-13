@@ -3,9 +3,9 @@
 Ataris 1972 published classic game Pong implemented in Python
 
 
-## What’s inside
+## What’s inside this project
 
-- **pong.py** contains the whole game and the ui  
+- **pong.py** - contains the whole game and the ui  
 
 ## How to use this example?
 
