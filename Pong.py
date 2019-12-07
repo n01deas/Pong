@@ -46,7 +46,6 @@ pen.hideturtle()
 pen.goto(0, 260)
 pen.write("Player A: 0 - Player B: 0", align="center", font=("Courier", 24, "normal"))
 
-
 #Ball movement
 ball.dx = 0.15
 ball.dy = -0.15
@@ -71,7 +70,6 @@ def paddle_b_down():
     y = paddle_b.ycor()
     y -= 20
     paddle_b.sety(y)
-
 
 #Keyboard binding
 wn.listen()
@@ -105,14 +103,12 @@ while True:
         pen.clear()
         pen.write("Player A: {} - Player B: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
 
-
     if ball.xcor() < -390:
         ball.goto(0, 0)
         ball.dx *= -1
         score_b += 1
         pen.clear()
         pen.write("Player A: {} - Player B: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
-
 
     #Paddle and ball collision
     if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() -40):
